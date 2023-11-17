@@ -35,5 +35,5 @@ interface LocalCrmServiceInterface
     /**
      * @return LocalCrmUserIdentifier
      */
-    public function createIdentifier(ContextInterface $context): IdentifierInterface;
+    public function createIdentifier(): IdentifierInterface;
 }
