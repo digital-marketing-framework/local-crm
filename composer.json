@@ -1,0 +1,50 @@
+{
+    "name": "digital-marketing-framework/local-crm",
+    "description": "Digital Marketing Framework - Local CRM",
+    "license": "GPL-2.0-or-later",
+    "type": "library",
+    "keywords": [
+        "marketing",
+        "framework",
+        "data",
+        "relay",
+        "distributor",
+        "collector",
+        "local crm"
+    ],
+    "authors": [
+        {
+            "name": "Mediatis AG",
+            "email": "info@mediatis.de",
+            "homepage": "https://www.mediatis.de",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://www.mediatis.de",
+    "require": {
+        "php": "^8.1",
+        "digital-marketing-framework/collector-core": "^1.0",
+        "digital-marketing-framework/distributor-core": "^1.0"
+    },
+    "require-dev": {
+        "mediatis/coding-standards": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DigitalMarketingFramework\\LocalCrm\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DigitalMarketingFramework\\Collector\\Core\\Tests\\": "vendor/digital-marketing-framework/collector-core/tests/",
+            "DigitalMarketingFramework\\Core\\Tests\\": "vendor/digital-marketing-framework/core/tests/",
+            "DigitalMarketingFramework\\Distributor\\Core\\Tests\\": "vendor/digital-marketing-framework/distributor-core/tests/",
+            "DigitalMarketingFramework\\LocalCrm\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
+    }
+}
