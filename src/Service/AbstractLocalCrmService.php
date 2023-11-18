@@ -56,6 +56,10 @@ abstract class AbstractLocalCrmService implements LocalCrmServiceInterface
      */
     protected function decodeData(string $encodedData): array
     {
+        if ($encodedData === '') {
+            return [];
+        }
+
         return $this->unpackData(json_decode($encodedData, associative: true, flags: JSON_THROW_ON_ERROR));
     }
 }
