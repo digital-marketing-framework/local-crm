@@ -52,4 +52,9 @@ class LocalCrmRoute extends Route
         parent::addContext($context);
         $this->crm->prepareContext($context, $this->submission->getContext());
     }
+
+    public static function getLabel(): ?string
+    {
+        return 'Local CRM';
+    }
 }
