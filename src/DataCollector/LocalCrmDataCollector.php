@@ -40,4 +40,9 @@ class LocalCrmDataCollector extends DataCollector
 
         return new DataCollectorResult($data, $identifiers);
     }
+
+    public static function getLabel(): ?string
+    {
+        return 'Local CRM';
+    }
 }

@@ -36,4 +36,9 @@ class LocalCrmIdentifierCollector extends IdentifierCollector
     {
         return $this->crm->fetchIdentifierFromContext($context);
     }
+
+    public static function getLabel(): ?string
+    {
+        return 'Local CRM';
+    }
 }
